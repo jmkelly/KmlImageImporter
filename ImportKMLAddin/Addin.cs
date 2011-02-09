@@ -42,6 +42,7 @@ namespace ImportKml
         private void openFileDialog1_FileOk(object sender, CancelEventArgs e)
         {
 
+          
             string[] files = openFileDialog1.FileNames;
 
             Manifold.Interop.History logger = doc.Application.History;
@@ -69,6 +70,7 @@ namespace ImportKml
 
                 }
             }
+            openFileDialog1.Dispose();
         }
 
         
